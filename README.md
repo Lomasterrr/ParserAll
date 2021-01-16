@@ -25,7 +25,7 @@
     pkg install git
    ```
 3. И вводите команду ниже(для установки парсера):
-```bash
+   ```bash
     git clone https://github.com/Lomasterrr/ParserAll
    ```
 4. Запускаеться программу этими командами:
