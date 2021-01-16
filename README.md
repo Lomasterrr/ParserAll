@@ -14,4 +14,4 @@
     ```
 4. Теперь запускаем этой командой
 ```
-    python main.py
+   python main.py
