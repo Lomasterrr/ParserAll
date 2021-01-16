@@ -17,3 +17,20 @@
     python main.py
    ```
 
+# Установка для Android
+1. Скачайте [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=ru)
+2. Введите команды ниже поочерёдно для установки необходимых компонентов:
+   ```bash
+    pkg install python
+    pkg install git
+   ```
+3. И вводите команду ниже(для установки парсера):
+```bash
+    git clone https://github.com/Lomasterrr/ParserAll
+   ```
+4. Запускаеться программу этими командами:
+   ```bash
+    cd ParserAll
+    python main.py
+   ```
+----------------------------------------------
