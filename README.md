@@ -7,7 +7,7 @@
 # Установка для Windows
 1. Установите Python скачав установщик с [официального сайта](https://www.python.org/downloads/).
 2. Установите git для Windows, скачать можно его [отсюда](https://git-scm.com/download/win).
-3. И вводите команду ниже(для установки парсера):
+3. И введите команду ниже(для установки парсера):
    ```bash
     git clone https://github.com/Lomasterrr/ParserAll
    ```
