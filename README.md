@@ -16,7 +16,7 @@
     cd ParserAll
     python main.py
    ```
-
+----------------------------------------------
 # Установка для Android
 1. Скачайте [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=ru)
 2. Введите команды ниже поочерёдно для установки необходимых компонентов:
