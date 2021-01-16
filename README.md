@@ -11,7 +11,7 @@
     ```bash
     git clone https://github.com/Lomasterrr/ParserAll
     ```
-4. Запускаем программу командоми:
+4. Запускаем программу командами:
 ```bash
     cd ParserAll
     python main.py
