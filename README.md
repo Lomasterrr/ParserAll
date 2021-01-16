@@ -11,7 +11,7 @@
    ```bash
     git clone https://github.com/Lomasterrr/ParserAll
    ```
-4. Запускаеться программу этими командами:
+4. Запускаеться программа этими командами:
    ```bash
     cd ParserAll
     python main.py
@@ -24,11 +24,11 @@
     pkg install python
     pkg install git
    ```
-3. И вводите команду ниже(для установки парсера):
+3. И введите команду ниже(для установки парсера):
    ```bash
     git clone https://github.com/Lomasterrr/ParserAll
    ```
-4. Запускаеться программу этими командами:
+4. Запускаеться программа этими командами:
    ```bash
     cd ParserAll
     python main.py
