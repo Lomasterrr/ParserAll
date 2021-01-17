@@ -7,7 +7,7 @@
 # Установка для Windows
 1. Установите Python скачав установщик с [официального сайта](https://www.python.org/downloads/).
 2. Установите git для Windows, скачать можно его [отсюда](https://git-scm.com/download/win).
-3. Далее введите команду ниже(для установки парсера):
+3. Далее вводим команды ниже(для установки парсера и компонентов):
    ```bash
     git clone https://github.com/Lomasterrr/ParserAll
     pip install requests
@@ -26,6 +26,8 @@
    ```bash
     pkg install python
     pkg install git
+    pip install requests
+    pip install beautifulsoup4
    ```
 3. Далее введите команду ниже(для установки парсера):
    ```bash
