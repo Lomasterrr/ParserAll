@@ -10,6 +10,9 @@
 3. Далее введите команду ниже(для установки парсера):
    ```bash
     git clone https://github.com/Lomasterrr/ParserAll
+    pip install requests
+    pip install beautifulsoup4
+
    ```
 4. И запускаем программу этими командами:
    ```bash
