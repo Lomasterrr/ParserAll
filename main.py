@@ -25,7 +25,9 @@ def steam():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        steamaccountall = (news.get_parser_all())
+        f = open('steam_account.html', 'w')
+        f.write(str(steamaccountall))
         
 def mailru():
     class AllParser:
@@ -50,7 +52,9 @@ def mailru():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        mailruall = (news.get_parser_all())
+        f = open('mailru_account.html', 'w')
+        f.write(str(mailruall))
         
 def minecraftaccount():
     class AllParser:
@@ -75,7 +79,10 @@ def minecraftaccount():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        minecraftaccountall = (news.get_parser_all())
+        f = open('minecraft_account.html', 'w')
+        f.write(str(minecraftaccountall))
+
 
 def nombers():
     class AllParser:
@@ -100,7 +107,9 @@ def nombers():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        nombersall = (news.get_parser_all())
+        f = open('phone_nombers.html', 'w')
+        f.write(str(nombersall))
         
 def yahooacconts():
     class AllParser:
@@ -125,7 +134,9 @@ def yahooacconts():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        yahooaccontall = (news.get_parser_all())
+        f = open('yahoo_account.html', 'w')
+        f.write(str(yahooaccontall))
         
 def steamkey():
     class AllParser:
@@ -150,7 +161,10 @@ def steamkey():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        steamkeyall = (news.get_parser_all())
+        f = open('steam_key.html', 'w')
+        f.write(str(steamkeyall))
+
         
 def tokendiscord():
     class AllParser:
@@ -175,7 +189,9 @@ def tokendiscord():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        tokendiscordall = (news.get_parser_all())
+        f = open('token_discord.html', 'w')
+        f.write(str(tokendiscordall))
 
 def googleaccount():
     class AllParser:
@@ -200,7 +216,9 @@ def googleaccount():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        googleaccountall = (news.get_parser_all())
+        f = open('google_account.html', 'w')
+        f.write(str(googleaccountall))
         
 def yandexaccount():
     class AllParser:
@@ -225,7 +243,9 @@ def yandexaccount():
     
     if __name__ == "__main__":
         news = AllParser()
-        print(news.get_parser_all())
+        yandexall = (news.get_parser_all())
+        f = open('yandex_account.html', 'w')
+        f.write(str(yandexall))
 
        
         
@@ -294,4 +314,6 @@ elif what1 == "8":
 	
 elif what1 == "9":
 	mailru()
+
+
 
