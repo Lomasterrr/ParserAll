@@ -1,4 +1,4 @@
-import requests
+ import requests
 from bs4 import BeautifulSoup
 from time import sleep 
 
@@ -250,8 +250,8 @@ if what == '1':
  [4]Minecraft Accounts, [5]Google Accounts, [6]Yandex Accounts,
  [7]Yahoo Accounts, [8]Nombers Phone [9]Mail.ru Accounts''')
 	print()
-        print(' -----------------------------')
 	what1 = input(" Сhoose: ")
+print(' -----------------------------')
 
 if what == '2':
     what1 = " by Lomaster"
