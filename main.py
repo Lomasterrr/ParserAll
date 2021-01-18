@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from time import sleep 
+from time import sleep
 
 def steam():
     class AllParser:
@@ -219,7 +219,7 @@ def googleaccount():
         googleaccountall = (news.get_parser_all())
         f = open('google_account.html', 'w')
         f.write(str(googleaccountall))
-        
+
 def yandexaccount():
     class AllParser:
         def __init__(self):
@@ -238,17 +238,42 @@ def yandexaccount():
         def get_parser_all(self):
             soup = BeautifulSoup(self.html, 'html.parser')
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
-            return news_list 
+            return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         yandexall = (news.get_parser_all())
         f = open('yandex_account.html', 'w')
         f.write(str(yandexall))
 
-       
-        
+def Custom():
+    class AllParser:
+        def __init__(self):
+            self.url = 'https://yandex.ru/search/?text=host%3Apastebin.com%20' + what3 + '&lr=21329'
+            self.html = self.get_html()
+
+        def get_html(self):
+            try:
+                result = requests.get(self.url)
+                result.raise_for_status()
+                return result.text
+            except(requests.RequestException, ValueError):
+                print('Server error')
+                return False
+
+        def get_parser_all(self):
+            soup = BeautifulSoup(self.html, 'html.parser')
+            news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
+            return news_list
+
+    if __name__ == "__main__":
+        news = AllParser()
+        custom = (news.get_parser_all())
+        f = open('Custom.html', 'w')
+        f.write(str(custom))
+
+
+
 print('''
      █───████─█───█─████─███─███─███─████
      █───█──█─██─██─█──█─█────█──█───█──█
@@ -268,10 +293,16 @@ if what == '1':
 	print()
 	print(''' [1]Steam Accounts, [2]Steam Keys, [3]Tokens Discord,
  [4]Minecraft Accounts, [5]Google Accounts, [6]Yandex Accounts,
- [7]Yahoo Accounts, [8]Nombers Phone [9]Mail.ru Accounts''')
+ [7]Yahoo Accounts, [8]Mail.ru Accounts [9]Custom''')
 	print()
 	what1 = input(" Сhoose: ")
 print(' -----------------------------')
+
+if what1 == '9':
+    what3 = input('Enter one keyword: ')
+    Custom()
+
+
 
 if what == '2':
     what1 = " by Lomaster"
