@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
+from colorama import init
+from colorama import Fore, Back, Style
+
 
 def steam():
     class AllParser:
@@ -22,13 +25,13 @@ def steam():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         steamaccountall = (news.get_parser_all())
         f = open('steam_account.html', 'w')
         f.write(str(steamaccountall))
-        
+
+
 def mailru():
     class AllParser:
         def __init__(self):
@@ -49,13 +52,13 @@ def mailru():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         mailruall = (news.get_parser_all())
         f = open('mailru_account.html', 'w')
         f.write(str(mailruall))
-        
+
+
 def minecraftaccount():
     class AllParser:
         def __init__(self):
@@ -76,7 +79,6 @@ def minecraftaccount():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         minecraftaccountall = (news.get_parser_all())
@@ -104,13 +106,13 @@ def nombers():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         nombersall = (news.get_parser_all())
         f = open('phone_nombers.html', 'w')
         f.write(str(nombersall))
-        
+
+
 def yahooacconts():
     class AllParser:
         def __init__(self):
@@ -131,13 +133,13 @@ def yahooacconts():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         yahooaccontall = (news.get_parser_all())
         f = open('yahoo_account.html', 'w')
         f.write(str(yahooaccontall))
-        
+
+
 def steamkey():
     class AllParser:
         def __init__(self):
@@ -158,14 +160,13 @@ def steamkey():
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
             return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         steamkeyall = (news.get_parser_all())
         f = open('steam_key.html', 'w')
         f.write(str(steamkeyall))
 
-        
+
 def tokendiscord():
     class AllParser:
         def __init__(self):
@@ -184,14 +185,14 @@ def tokendiscord():
         def get_parser_all(self):
             soup = BeautifulSoup(self.html, 'html.parser')
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
-            return news_list 
+            return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         tokendiscordall = (news.get_parser_all())
         f = open('token_discord.html', 'w')
         f.write(str(tokendiscordall))
+
 
 def googleaccount():
     class AllParser:
@@ -211,14 +212,14 @@ def googleaccount():
         def get_parser_all(self):
             soup = BeautifulSoup(self.html, 'html.parser')
             news_list = soup.findAll('h2', class_='organic__title-wrapper typo typo_text_l typo_line_m')
-            return news_list 
+            return news_list
 
-    
     if __name__ == "__main__":
         news = AllParser()
         googleaccountall = (news.get_parser_all())
         f = open('google_account.html', 'w')
         f.write(str(googleaccountall))
+
 
 def yandexaccount():
     class AllParser:
@@ -245,6 +246,7 @@ def yandexaccount():
         yandexall = (news.get_parser_all())
         f = open('yandex_account.html', 'w')
         f.write(str(yandexall))
+
 
 def Custom():
     class AllParser:
@@ -273,78 +275,81 @@ def Custom():
         f.write(str(custom))
 
 
+init(convert=True)
 
-print('''
-     █───████─█───█─████─███─███─███─████
-     █───█──█─██─██─█──█─█────█──█───█──█
-     █───█──█─█─█─█─████─███──█──███─████
-     █───█──█─█───█─█──█───█──█──█───█─█
-     ███─████─█───█─█──█─███──█──███─█─█''')
-sleep(2)
+print(Fore.RED)
+sleep(0.2)
+print("     █───████─█───█─████─███─███─███─████")
+sleep(0.2)
+print("     █───█──█─██─██─█──█─█────█──█───█──█")
+sleep(0.2)
+print("     █───█──█─█─█─█─████─███──█──███─████")
+sleep(0.2)
+print("     █───█──█─█───█─█──█───█──█──█───█─█")
+sleep(0.2)
+print("     ███─████─█───█─█──█─███──█──███─█─█")
+
+sleep(1.3)
+print(Fore.LIGHTGREEN_EX)
 print(" [1]List_pars, [2]Developer, [3]How it works?")
 print()
 what = input(" Сhoose: ")
 
-
 if what == '1':
-	print(' -----------------------------')
-	print(' ▼ Here is what I can parse ▼')
-	sleep(1)
-	print()
-	print(''' [1]Steam Accounts, [2]Steam Keys, [3]Tokens Discord,
- [4]Minecraft Accounts, [5]Google Accounts, [6]Yandex Accounts,
- [7]Yahoo Accounts, [8]Mail.ru Accounts [9]Custom''')
-	print()
-	what1 = input(" Сhoose: ")
-print(' -----------------------------')
+    print(Fore.RED + ' ------------------------------')
+    print(Fore.LIGHTGREEN_EX + '  ▼ Here is what I can parse ▼')
+    sleep(1)
+    print()
+    print('''  [1]Steam Accounts, [2]Steam Keys, [3]Tokens Discord,
+  [4]Minecraft Accounts, [5]Google Accounts, [6]Yandex Accounts,
+  [7]Yahoo Accounts, [8]Mail.ru Accounts [9]Custom''')
+    print()
+    what1 = input(" Сhoose: ")
+print(Fore.RED + ' ------------------------------')
 
 if what1 == '9':
     what3 = input('Enter one keyword: ')
     Custom()
-
-
+    print(Fore.RED + ' ------------------------------')
 
 if what == '2':
     what1 = " by Lomaster"
     print(what1)
-    print(" Im NETSTALKER and developer python")
+    print(Fore.LIGHTGREEN_EX + " Im NETSTALKER and developer python")
     print(" Country - Russia")
     print(" Telegram - @Lomasterr")
-    print(' -----------------------------')
+    print(Fore.RED + ' -------------------------------')
 
 if what == '3':
-	what1 = "Ты сюда не смотри лучше уди, а то мой говнокод тебя напугает"
-	print(" This is Yandex dorks baby")
-	print(' -----------------------------')
-    
-	
+    what1 = "Ты сюда не смотри лучше уди, а то мой говнокод тебя напугает"
+    print(Fore.LIGHTGREEN_EX + " This is Yandex dorks baby")
+    print(Fore.RED + ' -------------------------------')
 
 if what1 == "1":
-	 steam()
-	 
-elif what1 == "2":
-	 steamkey()
-	 
-elif what1 == "3":
-	 tokendiscord()
-	 
-elif what1 == "4":
-	minecraftaccount()
+    steam()
+    print(Fore.RED + '   All Right! Look html file.')
 
-elif what1 == "5":
-	googleaccount()
-
-elif what1 == "6":
-	yandexaccount()
-	
-elif what1 == "7":
-	yahooacconts()
-
-elif what1 == "8":
-	nombers()
-	
-elif what1 == "9":
-	mailru()
-
-
-
+if what1 == "2":
+    steamkey()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "3":
+    tokendiscord()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "4":
+    minecraftaccount()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "5":
+    googleaccount()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "6":
+    yandexaccount()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "7":
+    yahooacconts()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "8":
+    nombers()
+    print(Fore.RED + '   All Right! Look html file.')
+if what1 == "9":
+    mailru()
+    print(Fore.RED + '   All Right! Look html file.')
