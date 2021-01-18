@@ -22,6 +22,7 @@
     git clone https://github.com/Lomasterrr/ParserAll
     pip install requests
     pip install beautifulsoup4
+    pip install colorama
 
    ```
 4. И запускаем программу этими командами:
