@@ -4,7 +4,6 @@ from time import sleep
 from colorama import init
 from colorama import Fore, Back, Style
 
-
 def steam():
     class AllParser:
         def __init__(self):
@@ -274,9 +273,7 @@ def Custom():
         f = open('Custom.html', 'w')
         f.write(str(custom))
 
-
 init(convert=True)
-
 print(Fore.RED)
 sleep(0.2)
 print("     █───████─█───█─████─███─███─███─████")
@@ -307,28 +304,29 @@ if what == '1':
     what1 = input(" Сhoose: ")
 print(Fore.RED + ' ------------------------------')
 
-if what1 == '9':
-    what3 = input('Enter one keyword: ')
-    Custom()
-    print(Fore.RED + ' ------------------------------')
-
 if what == '2':
     what1 = " by Lomaster"
-    print(what1)
+    print(Fore.LIGHTMAGENTA_EX + " by Lomaster")
     print(Fore.LIGHTGREEN_EX + " Im NETSTALKER and developer python")
     print(" Country - Russia")
     print(" Telegram - @Lomasterr")
     print(Fore.RED + ' -------------------------------')
 
 if what == '3':
-    what1 = "Ты сюда не смотри лучше уди, а то мой говнокод тебя напугает"
-    print(Fore.LIGHTGREEN_EX + " This is Yandex dorks baby")
+    what1 = "Ты сюда не смотри, лучше уди, а то мой говнокод тебя напугает"
+    print(Fore.LIGHTGREEN_EX + "   This is Yandex dorks baby.")
     print(Fore.RED + ' -------------------------------')
+
+if what1 == '9':
+    print(Fore.LIGHTGREEN_EX + ' Enter one keyword: ', end='')
+    what3 = input()
+    Custom()
+    print(Fore.RED + ' ------------------------------')
+
 
 if what1 == "1":
     steam()
     print(Fore.RED + '   All Right! Look html file.')
-
 if what1 == "2":
     steamkey()
     print(Fore.RED + '   All Right! Look html file.')
